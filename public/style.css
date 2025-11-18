@@ -214,7 +214,7 @@ nav a:hover {
 
 .data-btn:hover {
     background-color: #fff;
-    color: #000;
+    color: #000000;
 }
 
 @media (max-width: 900px) {
@@ -277,8 +277,18 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin-bottom: 40px;
   color: white;
+  overflow-x: auto;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.depoimentos::-webkit-scrollbar {
+  display: none;
+}
+
+.depoimentos .card {
+  flex: 0 0 300px;
 }
 
 .card {
@@ -291,23 +301,48 @@ nav a:hover {
 
 .box {
   width: 280px;
-  height: 400px;
-  border-radius: 8px;
+  height: 350px;
+  border-radius: 12px;
   background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.box .nome {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.box .texto {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4rem;
 }
 
 .setas {
   position: absolute;
-  top: 50%;
-  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
-  transform: translateY(-50%);
+  transform: translateY(-500%);
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
+}
+
+.setas button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 /* Responsivo */
@@ -364,7 +399,7 @@ nav a:hover {
 }
 
 .faq-item {
-  margin-bottom: 32px;
+  margin-bottom: 50px;
 }
 
 .faq-question {
@@ -373,6 +408,8 @@ nav a:hover {
   color: #000000;
   margin: 0 0 12px 0;
   line-height: 1.4;
+  display: flex;
+  justify-content: center;
 }
 
 .faq-answer {
@@ -381,6 +418,8 @@ nav a:hover {
   line-height: 1.6;
   margin: 0;
   opacity: 0.95;
+  display: flex;
+  justify-content: center;
 }
 
 /* Responsivo */
