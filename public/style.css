@@ -563,3 +563,116 @@ footer > *:not(.overlay-footer) {
     font-size: 1.1rem;
   }
 }
+
+/* Estilos para a página de serviços da Talura */
+
+.servicos-header {
+  background: #0e1a13;
+  padding: 120px 5% 80px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.servicos-header h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.servicos-header p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.section {
+  padding: 100px 5%;
+  background: #ece6df;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #0f241b;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servico-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.servico-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.servico-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #0f241b;
+}
+
+.servico-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.publico-section {
+  background: #0e1a13;
+  padding: 120px 5%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.publico-section h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.publico-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.publico-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.publico-item:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-5px);
+}
+
+.publico-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.publico-item p {
+  font-size: 15px;
+  line-height: 1.6;
+}

@@ -10,4 +10,4 @@ document.addEventListener("DOMContentLoaded", () => {
     setaEsq.addEventListener("click", () => {
         container.scrollLeft -= 300;
     });
-})
+});
