@@ -136,7 +136,6 @@ nav a:hover {
 .info {
     width: 100%;
     margin-top: 40px;
-    background: url("/public/imagens/codigo.png") center/cover no-repeat;
     padding: 80px 5%;
     position: relative;
 }
