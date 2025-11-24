@@ -44,8 +44,6 @@ a {
   font-size: 1.2rem;
   color: #fff;
   letter-spacing: 0.5px;
-  align-self: center;
-  margin: 0 0 0px 0;
 }
 
 nav ul {
@@ -65,124 +63,62 @@ nav a:hover {
   opacity: 0.8;
 }
 
-/* MAIN */
-main {
-  max-width: 1200px;
-  margin: 80px auto;
-  padding: 80px 0 0 0;
-  text-align: center;
+.hero {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px 7%;
 }
 
-h1 {
-  font-size: 2.8rem;
-  color: var(--primary);
-  margin-bottom: 20px;
+.hero-left{
+    padding: 100px 0 0 0;
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  color: #555;
-  max-width: 900px;
-  margin: 0 auto 60px;
+.logo {
+    width: 200px;
 }
 
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  margin-bottom: 100px;
+.brand {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 1000;
 }
 
-.service-card {
-  background: var(--white);
-  padding: 40px 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: center;
+.hero-text {
+    max-width: 550px;
 }
 
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-}
-
-.service-card .icon {
-  font-size: 48px;
-  color: var(--primary);
-  margin-bottom: 24px;
-}
-
-.service-card h3 {
-  font-size: 1.5rem;
-  color: var(--primary);
-  margin-bottom: 16px;
-}
-
-.service-card p {
-  color: #666;
-  font-size: 1rem;
-}
-
-.cta-orcamento{
-  padding: 60px 0 0 0;
-}
-
-.data-btn {
-    background: transparent;
-    border: 1px solid #000000;
-    color: #000000;
-    padding: 0.9rem 1.6rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 8px;
+.hero-text h1 {
+    font-size: 30px;
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.4px;
+    padding: 100px 0 0 0;
 }
 
-.data-btn:hover {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.section-title{
-  padding: 0px 0 0 0;
-}
-
-.especializacoes-list {
-  margin-top: 20px;
-  display: grid;
-  gap: 16px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.esp-item {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  background: var(--surface);
-  padding: 14px 18px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.esp-item:hover{
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-}
-
-.esp-icon {
-  width: 30px;
+.subtext {
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 
-/*footer*/
+.info {
+    margin-top: 30px;
+    background: url("/public/imagens/solucoes.png") center/cover no-repeat;
+    padding: 60px 7%;
+}
+
+.info-content {
+    background: rgba(0,0,0,0.45);
+    padding: 30px;
+    color: white;
+}
+
+.item {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
 
 footer {
   background-color: #0a4460;
