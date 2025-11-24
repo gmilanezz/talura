@@ -66,7 +66,6 @@ nav a:hover {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('./public/imagens/fundo.png') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,12 +73,34 @@ nav a:hover {
 }
 
 .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  z-index: 2;
+}
+
+.overlay::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(5, 38, 54, 0.65);
+  z-index: 2;
+}
+
+.hero > *:not(.overlay) {
+  position: relative;
+  z-index: 3;
 }
 
 .hero-content {
@@ -162,17 +183,29 @@ nav a:hover {
     align-items: center;
     justify-content: flex-end;
     min-height: 125vh;
-    background: url('./public/imagens/codigo.png') no-repeat center center/cover;
     overflow: hidden;
 }
 
-.overlay-orcamento {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.data-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 900px;
 }
 
 .data-content {
@@ -234,11 +267,11 @@ nav a:hover {
 
 /* Seção feedback */
 .feedback {
-  background: url('./public/imagens/fundo-orcamento.png') no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 120px 20px;
   position: relative;
+  overflow: hidden;
 }
 
 .overlay-feedback {
@@ -247,8 +280,22 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.50);
   z-index: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
+
+.overlay-feedback::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
 }
 
 .feedback > *:not(.overlay-feedback) {

@@ -63,61 +63,122 @@ nav a:hover {
   opacity: 0.8;
 }
 
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    0% { opacity: 0; transform: scale(0.85); filter: blur(6px); }
+    100% { opacity: 1; transform: scale(1); filter: blur(0px); }
+}
+
+/* ——— HERO ——— */
 .hero {
+    width: 100%;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
-    gap: 60px;
-    padding: 60px 7%;
-}
-
-.hero-left{
+    align-items: center;
     padding: 100px 0 0 0;
+    gap: 70px;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out forwards;
 }
 
-.logo {
-    width: 200px;
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: scaleIn 1.2s ease-out;
+}
+
+.hero-left img {
+    width: 250px;
+    filter: drop-shadow(0px 0px 8px rgba(0, 150, 255, 0.25));
+    animation: fadeUp 1.4s ease-out;
 }
 
 .brand {
-    font-size: 1rem;
-    letter-spacing: 1.5px;
-    margin-top: 10px;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-weight: 1000;
+    margin-top: 18px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    animation: fadeUp 1.6s ease-out;
 }
 
+/* ——— TEXTOS ——— */
 .hero-text {
-    max-width: 550px;
+    animation: fadeUp 1.4s ease-out;
 }
 
 .hero-text h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
-    padding: 100px 0 0 0;
+    max-width: 1000px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    animation: fadeUp 1.8s ease-out;
 }
 
-.subtext {
-    font-size: 15px;
-    line-height: 1.5;
+.hero-text p {
+    font-size: 14px;
+    max-width: 700px;
+    line-height: 1.6;
+    animation: fadeUp 2s ease-out;
 }
-
 
 .info {
-    margin-top: 30px;
-    background: url("/public/imagens/solucoes.png") center/cover no-repeat;
-    padding: 60px 7%;
+    width: 100%;
+    margin-top: 40px;
+    background: url("/public/imagens/codigo.png") center/cover no-repeat;
+    padding: 80px 5%;
+    position: relative;
+}
+
+.info::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.50);
+    backdrop-filter: blur(1.5px);
 }
 
 .info-content {
-    background: rgba(0,0,0,0.45);
-    padding: 30px;
+    position: relative;
     color: white;
+    max-width: 900px;
+    margin: auto;
+    animation: fadeUp 1.4s ease-out;
 }
 
 .item {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 22px;
+    margin-bottom: 22px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* ——— RESPONSIVO ——— */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .item {
+        font-size: 18px;
+    }
 }
 
 footer {
