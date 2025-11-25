@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
@@ -75,7 +75,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 160px;
+  padding: 180px 160px 140px 120px;
   text-align: center;
 }
 
@@ -125,18 +125,15 @@ nav a:hover {
   font-size: 1.1rem;
 }
 
+/*footer*/
 footer {
-  background-color: #fff;
-  color: #0a4460;
+  background-color: #ffffff;
+  color: #000000;
   padding: 70px 10%;
   position: relative;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
-}
-
-footer > *:not(.overlay-footer) {
-  position: relative;
-  z-index: 2;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 /* Estrutura principal */
@@ -157,7 +154,7 @@ footer > *:not(.overlay-footer) {
 .footer-section h4 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #fff; /* azul destaque */
+  color: #000; /* azul destaque */
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -166,7 +163,7 @@ footer > *:not(.overlay-footer) {
 .footer-section p {
   font-size: 0.95rem;
   line-height: 1.6;
-  color:#0a4460;
+  color: #000;
 }
 
 /* Lista de links */
@@ -181,7 +178,7 @@ footer > *:not(.overlay-footer) {
 }
 
 .footer-section ul li a {
-  color:#0a4460;
+  color: #000;
   text-decoration: none;
   font-size: 0.95rem;
   transition: all 0.3s ease;
@@ -202,7 +199,7 @@ footer > *:not(.overlay-footer) {
   text-align: center;
   padding-top: 25px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  color:#0a4460;
+  color: #000;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
 }

@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
@@ -184,27 +184,15 @@ h1 {
 
 /*footer*/
 
+/*footer*/
 footer {
-  background-color: #0a4460;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
   padding: 70px 10%;
   position: relative;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
-}
-
-.overlay-footer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(5, 38, 54, 0.65);
-}
-
-footer > *:not(.overlay-footer) {
-  position: relative;
-  z-index: 2;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 /* Estrutura principal */
@@ -225,7 +213,7 @@ footer > *:not(.overlay-footer) {
 .footer-section h4 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #fff; /* azul destaque */
+  color: #000; /* azul destaque */
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -234,7 +222,7 @@ footer > *:not(.overlay-footer) {
 .footer-section p {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #ccc;
+  color: #000;
 }
 
 /* Lista de links */
@@ -249,7 +237,7 @@ footer > *:not(.overlay-footer) {
 }
 
 .footer-section ul li a {
-  color: #ccc;
+  color: #000;
   text-decoration: none;
   font-size: 0.95rem;
   transition: all 0.3s ease;
@@ -269,8 +257,8 @@ footer > *:not(.overlay-footer) {
 .footer-bottom {
   text-align: center;
   padding-top: 25px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: #aaa;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #000;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
 }
