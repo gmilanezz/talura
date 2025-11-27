@@ -8,6 +8,25 @@ document.addEventListener("DOMContentLoaded", () => {
   faqItems.forEach(item => {
     item.addEventListener("click", () => toggleFAQ(item));
   });
+
+  const elements = document.querySelectorAll(".typewriter");
+
+  elements.forEach((el, index) => {
+    const text = el.textContent.trim();
+    el.textContent = ""; 
+    el.style.opacity = "1";
+
+    let i = 0;
+
+    function typeChar() {
+      if (i < text.length) {
+        el.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeChar, 28);
+      }
+    }
+    setTimeout(typeChar, index * 850);
+  });
 });
 
 window.addEventListener("scroll", () => {
