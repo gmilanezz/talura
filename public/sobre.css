@@ -142,6 +142,7 @@ nav a:hover {
     justify-content: space-between;
     gap: 60px;
     padding: 100px;
+    background-color: #000;
 }
 
 .servico-left {
@@ -181,7 +182,14 @@ nav a:hover {
     border-radius: 6px;
     text-decoration: none;
     font-size: 14px;
-    transition: .3s;
+    transition: .4s
+}
+
+.btn:hover {
+    background: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 0 1px #fff;
+    transform: translateY(-2px);
 }
 
 .servico-dark {
@@ -189,14 +197,14 @@ nav a:hover {
     color: white;
 }
 
-/* SECTION BLUE */
-.servico-blue {
-    background: #043A66;
+/* SECTION white */
+.servico-white {
+    background: #ffffff;
     padding: 100px 0;
 }
 
 /* CONTAINER */
-.servico-content-blue {
+.servico-content-white {
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
@@ -205,42 +213,44 @@ nav a:hover {
     padding: 0 0 0 0;
 }
 
-.servico-right-blue {
+.servico-right-white {
     max-width: 1000px;
-    color: #fff;
+    color: #000000;
 }
 
-.servico-right-blue h2 {
+.servico-right-white h2 {
     font-size: 28px;
     margin-bottom: 20px;
 }
 
-.servico-right-blue p {
+.servico-right-white p {
     line-height: 1.6;
     margin-bottom: 25px;
 }
 
-.servico-right-blue .btn {
+.servico-right-white .btn {
     padding: 10px 26px;
     background: #ffffff;
-    color: #043a66;
+    color: #000000;
     border-radius: 6px;
+    box-shadow: 0 0 0 1px #000;
     text-decoration: none;
     font-size: 14px;
     transition: .3s;
 }
 
-.servico-right-blue .btn:hover {
-    background: #ffffff;
+.servico-right-white .btn:hover {
+    background: #000000;
+    color: #fff;
 }
 
-.servico-left-blue {
+.servico-left-white {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.servico-left-blue img {
+.servico-left-white img {
     width: 140px;
     animation: float 2s infinite ease-in-out;
 }

@@ -377,24 +377,8 @@ nav a:hover {
   line-height: 1.4rem;
 }
 
-.setas {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 30px;
-  transform: translateY(-500%);
-  font-size: 2rem;
-  font-weight: bold;
-  color: #fff;
-}
-
-.setas button {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
+.cta-orcamento{
+  padding: 75px 0 0 0;
 }
 
 /* Responsivo */
