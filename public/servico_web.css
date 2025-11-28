@@ -40,10 +40,6 @@ body {
   transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-.navbar.scrolled {
-  border: 1px solid #000000;
-}
-
 .logo {
   display: flex;
   align-items: center;
