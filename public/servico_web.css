@@ -133,38 +133,6 @@ nav a:hover {
   margin: 0 auto;
 }
 
-.typewriter {
-  display: inline-block;
-  white-space: normal;
-  opacity: 1;
-}
-
-.typewriter .text {
-  white-space: normal;
-}
-
-.typewriter .cursor {
-  display: inline-block;
-  width: 2px;
-  height: 1em;
-  background: #fff;
-  margin-left: 2px;
-  animation: cursorBlink .8s infinite;
-}
-
-@keyframes cursorBlink {
-
-  0%,
-  100% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-
 .step-item h3 {
   font-size: 2rem;
   font-weight: 700;
