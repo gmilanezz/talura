@@ -453,3 +453,42 @@ nav {
         font-weight: 600;
     }
 }
+
+.intro {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+  color: #0a0a0a;
+}
+
+.intro h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.intro p {
+  font-size: 1rem;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.btn-outline {
+  display: inline-block;
+  border: 1.5px solid #0a4460;
+  color: #0a4460;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #0a4460;
+  color: #fff;
+}
