@@ -8,6 +8,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #fff;
   background-color: #0a4460;
+
   a {
     text-decoration: none;
     color: #fff;
@@ -28,6 +29,7 @@ body {
   align-items: center;
   padding: 15px 40px;
   z-index: 10;
+  border: 1px solid #000000;
 }
 
 a {
@@ -48,7 +50,7 @@ a {
 .logo h1 {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
-  color:#0a4460;
+  color: #0a4460;
   letter-spacing: 0.5px;
 }
 
@@ -60,7 +62,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color:#0a4460;
+  color: #0a4460;
   font-weight: 500;
   transition: 0.3s;
 }
@@ -78,6 +80,7 @@ nav a:hover {
   padding: 180px 160px 140px 120px;
   text-align: center;
 }
+
 .contato h1 {
   font-size: 2.4rem;
   margin-bottom: 60px;
@@ -101,7 +104,7 @@ nav a:hover {
   transition: transform 0.3s;
 }
 
-.contato-item:hover{
+.contato-item:hover {
   transform: translateY(-10px);
 }
 
@@ -158,7 +161,8 @@ footer {
 .footer-section h4 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #000; /* azul destaque */
+  color: #000;
+  /* azul destaque */
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -254,52 +258,73 @@ footer {
 }
 
 .nav-toggle {
-    display: none;
+  display: none;
 }
 
 .nav-toggle button {
-    background: none;
-    border: 0;
-    cursor: pointer;
-    font-size: 2rem;
-    color: var(--brand);
-    line-height: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--brand);
+  line-height: 0;
 }
 
 nav {
-    display: flex;
+  display: flex;
 }
 
 @media (max-width: 768px) {
 
-    .nav-toggle {
-        display: block;
-    }
+  .nav-toggle {
+    display: block;
+  }
 
-    nav {
-        display: none;
-    }
+  nav {
+    display: none;
+  }
 
-    .navbar.open nav {
-        display: block;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        width: 220px;
-        background: var(--card-bg);
-        padding: 1.4rem;
-        border-radius: 18px;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    }
+  .navbar.open nav {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    background: #fff;
+    padding: 1.4rem;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
 
-    .navbar.open nav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-    }
+  .navbar.open nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
 
-    .navbar.open nav a {
-        color: var(--brand);
-        font-weight: 600;
-    }
+  .navbar.open nav a {
+    color: var(--brand);
+    font-weight: 600;
+  }
+
+   .contato {
+    padding: 160px 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contato-grid {
+    justify-content: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
 }

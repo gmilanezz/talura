@@ -1,5 +1,5 @@
 :root {
-    --bg: #0b0b0c;
+    --bg: #fff;
     --text: #ffffff;
     --muted: #c9c9cf;
     --pill: #ffffff;
@@ -15,7 +15,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #000000;
+    background-color: #fff;
 
     a {
         text-decoration: none;
@@ -228,7 +228,21 @@ nav a:hover {
 
     .migration-section {
         padding: 40px 6%;
+        margin-top: 200px;
     }
+
+    .setas{
+        width: 90px;
+    }
+}
+
+.nav-toggle button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--brand);
+    line-height: 0;
 }
 
 .cta-feedback {
@@ -356,4 +370,49 @@ footer {
     .footer-section h4 {
         font-size: 1.1rem;
     }
+}
+
+@media (max-width: 850px) {
+
+  .nav-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .navbar.open nav {
+    display: block;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    background: #fff;
+    padding: 1.4rem;
+    width: 220px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+
+  .subtitle{
+    max-width: 350px;
+  }
+
+  .service-card{
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .navbar.open nav ul {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  main {
+    margin-top: 160px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
 }

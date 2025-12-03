@@ -7,6 +7,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #fff;
+
   a {
     text-decoration: none;
     color: #0a4460;
@@ -84,11 +85,13 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   z-index: 2;
 }
 
@@ -103,7 +106,7 @@ nav a:hover {
   z-index: 2;
 }
 
-.hero > *:not(.overlay) {
+.hero>*:not(.overlay) {
   position: relative;
   z-index: 3;
 }
@@ -183,12 +186,12 @@ nav a:hover {
 }
 
 .data-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    min-height: 125vh;
-    overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 125vh;
+  overflow: hidden;
 }
 
 .overlay {
@@ -214,60 +217,60 @@ nav a:hover {
 }
 
 .data-content {
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    max-width: 600px;
-    padding: 4rem 6rem;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  max-width: 600px;
+  padding: 4rem 6rem;
 }
 
 .data-content h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    line-height: 1.4;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
 }
 
 .data-content p {
-    font-size: 1rem;
-    color: #ccc;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
 .data-btn {
-    background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 0.9rem 1.6rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 8px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.4px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.9rem 1.6rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.4px;
 }
 
 .data-btn:hover {
-    background-color: #fff;
-    color: #000000;
+  background-color: #fff;
+  color: #000000;
 }
 
 @media (max-width: 900px) {
-    .data-section {
-        justify-content: center;
-        text-align: center;
-    }
+  .data-section {
+    justify-content: center;
+    text-align: center;
+  }
 
-    .data-content {
-        padding: 2rem;
-    }
+  .data-content {
+    padding: 2rem;
+  }
 
-    .data-content h2 {
-        font-size: 1.6rem;
-    }
+  .data-content h2 {
+    font-size: 1.6rem;
+  }
 }
 
 /* Seção feedback */
@@ -286,11 +289,12 @@ nav a:hover {
   width: 100%;
   height: 100%;
   z-index: 1;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .overlay-feedback::after {
@@ -300,10 +304,10 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.feedback > *:not(.overlay-feedback) {
+.feedback>*:not(.overlay-feedback) {
   position: relative;
   z-index: 2;
 }
@@ -357,7 +361,7 @@ nav a:hover {
   border-radius: 12px;
   background: #ffffff;
   padding: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -377,7 +381,7 @@ nav a:hover {
   line-height: 1.4rem;
 }
 
-.cta-orcamento{
+.cta-orcamento {
   padding: 75px 0 0 0;
 }
 
@@ -393,25 +397,6 @@ nav a:hover {
   }
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  .hero-content h2 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-}
 
 /* faq-section.css */
 
@@ -457,7 +442,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-.faq-item:hover{
+.faq-item:hover {
   transform: translateY(-5px);
 }
 
@@ -485,7 +470,7 @@ nav a:hover {
   opacity: 0;
 }
 
-.cta-question{
+.cta-question {
   display: flex;
   justify-content: center;
   padding: 20px 0 0 0;
@@ -496,13 +481,16 @@ nav a:hover {
   .faq-section {
     padding: 36px 24px;
   }
+  
   .faq-title {
     font-size: 24px;
     margin-bottom: 32px;
   }
+  
   .faq-question {
     font-size: 17px;
   }
+  
   .faq-answer {
     font-size: 15px;
   }
@@ -512,6 +500,7 @@ nav a:hover {
   .faq-title {
     font-size: 22px;
   }
+  
   .faq-question {
     font-size: 16px;
   }
@@ -546,7 +535,8 @@ footer {
 .footer-section h4 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #000; /* azul destaque */
+  color: #000;
+  /* azul destaque */
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -605,74 +595,44 @@ footer {
   footer {
     padding: 50px 5%;
   }
-
+  
   nav {
     position: absolute;
   }
-
+  
   .footer-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
+  
   .footer-section {
     margin-bottom: 30px;
   }
-
+  
   .footer-section h4 {
     font-size: 1.1rem;
   }
 }
 
-.nav-toggle {
-    display: none;
-}
-
-.nav-toggle button {
-    background: none;
-    border: 0;
-    cursor: pointer;
-    font-size: 2rem;
-    color: var(--brand);
-    line-height: 0;
-}
-
-nav {
-    display: flex;
-}
-
 @media (max-width: 768px) {
+  .navbar {
+    gap: 10px;
+  }
 
-    .nav-toggle {
-        display: block;
-    }
+  .logo h1{
+    max-width: 500px;
+  }
 
-    nav {
-        display: none;
-        position: absolute;
-    }
+  nav ul {
+    flex-direction: column;
+  }
 
-    .navbar.open nav {
-        display: block;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        width: 220px;
-        background: var(--card-bg);
-        padding: 1.4rem;
-        border-radius: 18px;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    }
+  .hero-content h2 {
+    font-size: 2rem;
+  }
 
-    .navbar.open nav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-    }
-
-    .navbar.open nav a {
-        color: var(--brand);
-        font-weight: 600;
-    }
+  .hero-content p {
+    font-size: 1rem;
+  }
 }

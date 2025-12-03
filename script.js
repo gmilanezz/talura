@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
   faqItems.forEach(item => {
     item.addEventListener("click", () => toggleFAQ(item));
   });
+
+  const menuBtn = document.getElementById("menuBtn");
+  const navbar = document.querySelector(".navbar");
+
+  menuBtn.addEventListener("click", () => {
+    navbar.classList.toggle("open");
+  });
 });
 
 window.addEventListener("scroll", () => {
@@ -18,8 +25,4 @@ window.addEventListener("scroll", () => {
   } else {
     navbar.classList.remove("scrolled");
   }
-  const menuBtn = document.getElementById("menuBtn");
-  menuBtn.addEventListener("click", () => {
-    navbar.classList.toggle("open");
-  });
 });

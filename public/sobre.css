@@ -266,16 +266,63 @@ nav a:hover {
 @media (max-width: 900px) {
     .hero {
         flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
         text-align: center;
-        gap: 40px;
+    }
+
+    .hero-left img {
+        width: 180px;
     }
 
     .hero-text h1 {
-        font-size: 32px;
+        font-size: 28px;
+        line-height: 1.3;
     }
 
-    .item {
-        font-size: 18px;
+    .hero-text p {
+        font-size: 14px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .servico-content {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding: 40px 20px;
+        text-align: center;
+        p {
+          max-width: 300px;
+        }
+    }
+
+    .servico-left,
+    .servico-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .servico-icon {
+        width: 120px;
+    }
+    
+    .servico-content-white {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .servico-right-white h2 {
+        font-size: 24px;
+    }
+
+    .servico-right-white p {
+        font-size: 14px;
+    }
+
+    .servico-left-white img {
+        width: 120px;
     }
 }
 
@@ -491,4 +538,153 @@ nav {
 .btn-outline:hover {
   background: #0a4460;
   color: #fff;
+}
+
+@media (max-width: 900px) {
+  footer {
+    padding: 50px 5%;
+  }
+
+  nav {
+    position: absolute;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+  }
+
+  .footer-section h4 {
+    font-size: 1.1rem;
+  }
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--brand);
+  line-height: 0;
+}
+
+nav {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+
+    .nav-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .navbar.open nav {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 220px;
+        background: var(--card-bg);
+        padding: 1.4rem;
+        border-radius: 18px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .navbar.open nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .navbar.open nav a {
+        color: var(--brand);
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 850px) {
+
+  .nav-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .navbar.open nav {
+    display: block;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    background: #fff;
+    padding: 1.4rem;
+    width: 220px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+
+  .subtitle{
+    max-width: 350px;
+  }
+
+  .service-card{
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .navbar.open nav ul {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  main {
+    margin-top: 160px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 12px 20px;
+        border-radius: 28px;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .servico-content,
+    .servico-content-white {
+        padding: 40px 10px !important;
+    }
+
+    .footer-section {
+        min-width: 100%;
+    }
 }
