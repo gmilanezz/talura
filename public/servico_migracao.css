@@ -245,6 +245,10 @@ nav a:hover {
     line-height: 0;
 }
 
+.nav-toggle{
+    display: none;
+}
+
 .cta-feedback {
   width: 100%;
   max-width: 1350px;
@@ -415,4 +419,10 @@ footer {
   .title {
     font-size: 2.2rem;
   }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1rem;
+    }
 }

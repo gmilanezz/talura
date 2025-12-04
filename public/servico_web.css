@@ -16,7 +16,6 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #000000;
-
   a {
     text-decoration: none;
     color: #0a4460;
@@ -292,77 +291,106 @@ footer {
   }
 }
 
+.nav-toggle{
+  display: none;
+}
+
 .nav-toggle button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--brand);
+  line-height: 0;
+}
+
+@media (max-width: 1000px) {
+  .servico-content {
+    flex-direction: column-reverse;
+    /* coloca a IMAGEM em cima */
+    text-align: center;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+
+  .servico-left,
+  .servico-right {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .servico-right h2 {
+    text-align: center;
+  }
+
+  .servico-right p {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .servico-icon {
+    width: 130px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    gap: 10px;
+  }
+
+  .logo-tree{
+    width: 170px;
+  }
+
+  .computador{
+    width: 130px;
+  }
+
+  .logo h1 {
+    max-width: 1000px;
+  }
+
+  .nav-toggle button {
     background: none;
     border: 0;
     cursor: pointer;
     font-size: 2rem;
     color: var(--brand);
     line-height: 0;
-}
+  }
 
-@media (max-width: 1000px) {
-    .servico-content {
-        flex-direction: column-reverse; /* coloca a IMAGEM em cima */
-        text-align: center;
-        gap: 40px;
-        padding: 60px 20px;
-    }
+  .nav-toggle {
+    display: block;
+  }
 
-    .servico-left,
-    .servico-right {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
+  nav {
+    display: none;
+  }
 
-    .servico-right h2 {
-        text-align: center;
-    }
+  .navbar.open nav {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 220px;
+    background: #fff;
+    padding: 1.4rem;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
 
-    .servico-right p {
-        max-width: 360px;
-        margin: 0 auto;
-    }
+  .navbar.open nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
 
-    .servico-icon {
-        width: 130px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .nav-toggle {
-        display: block;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .navbar.open nav {
-        display: block;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        width: 220px;
-        background: var(--card-bg);
-        padding: 1.4rem;
-        border-radius: 18px;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    }
-
-    .navbar.open nav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-    }
-
-    .navbar.open nav a {
-        color: var(--brand);
-        font-weight: 600;
-    }
+  .navbar.open nav a {
+    color: var(--brand);
+    font-weight: 600;
+  }
 }
 
 @media (max-width: 850px) {
@@ -384,10 +412,10 @@ footer {
     padding: 1.4rem;
     width: 220px;
     border-radius: 18px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   }
 
-  .subtitle{
+  .subtitle {
     max-width: 350px;
   }
 
@@ -408,10 +436,20 @@ footer {
   }
 
   main {
-    margin-top: 160px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 24px 16px 18px;
+    margin-top: 130px;
   }
 
   .title {
     font-size: 2.2rem;
   }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1rem;
+    }
 }

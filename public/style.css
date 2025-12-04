@@ -7,11 +7,14 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-
   a {
     text-decoration: none;
     color: #0a4460;
   }
+}
+
+.nav-toggle{
+  display: none;
 }
 
 .navbar {
@@ -355,6 +358,7 @@ nav a:hover {
   color: white;
 }
 
+
 .box {
   width: 280px;
   height: 350px;
@@ -390,10 +394,6 @@ nav a:hover {
   .depoimentos {
     flex-direction: column;
     gap: 25px;
-  }
-
-  .setas {
-    display: none;
   }
 }
 
@@ -613,6 +613,77 @@ footer {
   .footer-section h4 {
     font-size: 1.1rem;
   }
+
+  .navbar {
+    gap: 10px;
+  }
+
+  .logo h1 {
+    max-width: 1000px;
+  }
+
+  .nav-toggle button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--brand);
+    line-height: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .navbar.open nav {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 220px;
+    background: #fff;
+    padding: 1.4rem;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .navbar.open nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .navbar.open nav a {
+    color: var(--brand);
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .nav-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .navbar.open nav {
+    display: block;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    background: #fff;
+    padding: 1.4rem;
+    width: 220px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  } 
 }
 
 @media (max-width: 768px) {
@@ -647,7 +718,7 @@ footer {
     top: 70px;
     right: 20px;
     width: 220px;
-    background: var(--card-bg);
+    background: #fff;
     padding: 1.4rem;
     border-radius: 18px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -730,4 +801,10 @@ footer {
   .hero-content p {
     font-size: 1rem;
   }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1rem;
+    }
 }
