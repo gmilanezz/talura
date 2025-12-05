@@ -99,14 +99,14 @@ h1 {
   background: var(--white);
   padding: 40px 30px;
   border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .service-card .icon {
@@ -126,31 +126,31 @@ h1 {
   font-size: 1rem;
 }
 
-.cta-orcamento{
+.cta-orcamento {
   padding: 60px 0 0 0;
 }
 
 .data-btn {
-    background: transparent;
-    border: 1px solid #000000;
-    color: #000000;
-    padding: 0.9rem 1.6rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 8px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.4px;
+  background: transparent;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 0.9rem 1.6rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.4px;
 }
 
 .data-btn:hover {
-    background-color: #000000;
-    color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
 }
 
-.section-title{
+.section-title {
   padding: 0px 0 20px 0;
 }
 
@@ -174,9 +174,9 @@ h1 {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.esp-item:hover{
+.esp-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .esp-icon {
@@ -215,7 +215,8 @@ footer {
 .footer-section h4 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #000; /* azul destaque */
+  color: #000;
+  /* azul destaque */
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -247,8 +248,14 @@ footer {
 
 /* Logo */
 .logo-footer {
+  justify-content: flex-start;
   max-width: 150px;
   transition: transform 0.3s ease;
+}
+
+.logo-talura-footer {
+  max-width: 150px;
+  margin-bottom: 20px;
 }
 
 .footer-section .logo img:hover {
@@ -311,54 +318,55 @@ footer {
 }
 
 .nav-toggle {
-    display: none;
+  display: none;
 }
 
 .nav-toggle button {
-    background: none;
-    border: 0;
-    cursor: pointer;
-    font-size: 2rem;
-    color: var(--brand);
-    line-height: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--brand);
+  line-height: 0;
+  margin: 15px 0 0 0;
 }
 
 nav {
-    display: flex;
+  display: flex;
 }
 
 @media (max-width: 768px) {
 
-    .nav-toggle {
-        display: block;
-    }
+  .nav-toggle {
+    display: block;
+  }
 
-    nav {
-        display: none;
-    }
+  nav {
+    display: none;
+  }
 
-    .navbar.open nav {
-        display: block;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        width: 220px;
-        background: var(--card-bg);
-        padding: 1.4rem;
-        border-radius: 18px;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    }
+  .navbar.open nav {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 220px;
+    background: var(--card-bg);
+    padding: 1.4rem;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
 
-    .navbar.open nav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-    }
+  .navbar.open nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
 
-    .navbar.open nav a {
-        color: var(--brand);
-        font-weight: 600;
-    }
+  .navbar.open nav a {
+    color: var(--brand);
+    font-weight: 600;
+  }
 }
 
 @media (max-width: 850px) {
@@ -380,10 +388,10 @@ nav {
     padding: 1.4rem;
     width: 220px;
     border-radius: 18px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   }
 
-  .subtitle{
+  .subtitle {
     max-width: 350px;
   }
 
@@ -413,7 +421,22 @@ nav {
 }
 
 @media (max-width: 480px) {
-    .logo h1 {
-        font-size: 1rem;
-    }
+  .logo h1 {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    height: 32px;
+  }
+
+  .navbar {
+    padding: 12px 20px;
+    border-radius: 28px;
+  }
+
+  .logo-talura-footer {
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
+  }
 }

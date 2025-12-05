@@ -96,7 +96,7 @@ nav a:hover {
     margin-bottom: 18px;
 }
 
-.img-intro{
+.img-intro {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,45 +155,46 @@ nav a:hover {
 }
 
 .ferramentas-section {
-  text-align: center;
-  padding: 60px 0;
-  background: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+    background: #ffffff;
 }
 
 .ferramentas-section h3 {
-  font-size: 17px;
-  font-weight: 600;
-  color: #0b0b0b;
-  margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #0b0b0b;
+    margin-bottom: 30px;
 }
 
 .ferramentas-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 45px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    flex-wrap: wrap;
 }
 
 .ferramentas-logos img {
-  height: 55px;
-  width: auto;
-  object-fit: contain;
-  transition: transform 0.2s ease;
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
 }
 
 .ferramentas-logos img:hover {
-  transform: scale(1.08);
+    transform: scale(1.08);
 }
 
 /* responsividade */
 @media (max-width: 700px) {
-  .ferramentas-logos {
-    gap: 28px;
-  }
-  .ferramentas-logos img {
-    height: 45px;
-  }
+    .ferramentas-logos {
+        gap: 28px;
+    }
+
+    .ferramentas-logos img {
+        height: 45px;
+    }
 }
 
 /* responsividade */
@@ -214,7 +215,7 @@ nav a:hover {
     }
 
     .logo-tree {
-        width: 68px;
+        width: 120px;
     }
 
     .arrows {
@@ -228,10 +229,10 @@ nav a:hover {
 
     .migration-section {
         padding: 40px 6%;
-        margin-top: 200px;
+        margin-top: 100px;
     }
 
-    .setas{
+    .setas {
         width: 90px;
     }
 }
@@ -243,34 +244,35 @@ nav a:hover {
     font-size: 2rem;
     color: var(--brand);
     line-height: 0;
+    margin: 15px 0 0 0;
 }
 
-.nav-toggle{
+.nav-toggle {
     display: none;
 }
 
 .cta-feedback {
-  width: 100%;
-  max-width: 1350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 0 0 0;
+    width: 100%;
+    max-width: 1350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 0 0;
 }
 
 .data-btn {
-  background: transparent;
-  border: 1px solid #0a4460;
-  color: #0a4460;
-  padding: 0.9rem 1.6rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 8px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.4px;
+    background: transparent;
+    border: 1px solid #0a4460;
+    color: #0a4460;
+    padding: 0.9rem 1.6rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.4px;
 }
 
 .data-btn:hover {
@@ -334,8 +336,14 @@ footer {
 }
 
 .logo-footer {
+    justify-content: flex-start;
     max-width: 150px;
     transition: transform 0.3s ease;
+}
+
+.logo-talura-footer {
+    max-width: 150px;
+    margin-bottom: 20px;
 }
 
 .footer-section .logo img:hover {
@@ -378,51 +386,66 @@ footer {
 
 @media (max-width: 850px) {
 
-  .nav-toggle {
-    display: block;
-  }
+    .nav-toggle {
+        display: block;
+    }
 
-  nav {
-    display: none;
-  }
+    nav {
+        display: none;
+    }
 
-  .navbar.open nav {
-    display: block;
-    position: absolute;
-    top: 75px;
-    right: 20px;
-    background: #fff;
-    padding: 1.4rem;
-    width: 220px;
-    border-radius: 18px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-  }
+    .navbar.open nav {
+        display: block;
+        position: absolute;
+        top: 75px;
+        right: 20px;
+        background: #fff;
+        padding: 1.4rem;
+        width: 220px;
+        border-radius: 18px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
 
-  .subtitle{
-    max-width: 350px;
-  }
+    .subtitle {
+        max-width: 350px;
+    }
 
-  .service-card{
-    max-width: 300px;
-    text-align: center;
-  }
+    .service-card {
+        max-width: 300px;
+        text-align: center;
+    }
 
-  .navbar.open nav ul {
-    flex-direction: column;
-    gap: 1.2rem;
-  }
+    .navbar.open nav ul {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
 
-  main {
-    margin-top: 160px;
-  }
+    main {
+        margin-top: 160px;
+    }
 
-  .title {
-    font-size: 2.2rem;
-  }
+    .title {
+        font-size: 2.2rem;
+    }
 }
 
 @media (max-width: 480px) {
     .logo h1 {
         font-size: 1rem;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+    .navbar {
+        padding: 12px 20px;
+        border-radius: 28px;
+    }
+
+    .logo-talura-footer {
+        display: flex;
+        justify-content: center;
+        margin-left: 120px;
     }
 }

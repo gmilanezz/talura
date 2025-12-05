@@ -568,8 +568,14 @@ footer {
 
 /* Logo */
 .logo-footer {
+  justify-content: flex-start;
   max-width: 150px;
   transition: transform 0.3s ease;
+}
+
+.logo-talura-footer{
+  max-width: 150px; 
+  margin-bottom: 20px;
 }
 
 .footer-section .logo img:hover {
@@ -629,6 +635,7 @@ footer {
     font-size: 2rem;
     color: var(--brand);
     line-height: 0;
+    margin: 15px 0 0 0;
   }
 
   .nav-toggle {
@@ -806,5 +813,17 @@ footer {
 @media (max-width: 480px) {
     .logo h1 {
         font-size: 1rem;
+    }
+    .logo img {
+        height: 32px;
+    }
+    .navbar {
+        padding: 12px 20px;
+        border-radius: 28px;
+    }
+    .logo-talura-footer{
+      display: flex;
+      justify-content: center;
+      margin-left: 120px;
     }
 }
