@@ -1,0 +1,8 @@
+tabela hierarquias:
+-> coluna HIERARQUIAS = de_para
+
+tabela afastamentos:
+-> coluna AFASTAMENTOSEFIP, RETORNOSEFIP, MOTIVO, MOTIVORAIS = de_para
+
+tabela steps:
+-> coluna CLASSE, GRADE e STEP = de_para
